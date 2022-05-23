@@ -104,7 +104,7 @@ export const Formulario = ({setPacientes,pacientes,paciente,setPaciente}) => {
     return (
 
 
-        <div className='md:min-h-[310px] h-[310px] bg-gradient-to-r from-emerald-400 to-black ml-10 mr-5 rounded-md w-auto '>
+        <div className='md:min-h-[310px] h-[310px] bg-orange-600 ml-10 mr-5 rounded-md w-auto '>
             <form action='' className='m-5' onSubmit={validarForms}>
                 {error && <p className='bg-gray-700 text-white p-2  w-full rounded-md text-center font-bold mb-2'>DEBES DE LLENAR TODOS LOS CAMPOS</p>}
                 <div>
