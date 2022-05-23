@@ -73,7 +73,7 @@ export const Formulario = ({setPacientes,pacientes,paciente,setPaciente}) => {
                     const pacientesActualizado= pacientes.map(reemplazo => reemplazo.id === paciente.id ? objetoPaciente : reemplazo)
 
                     setPacientes(pacientesActualizado);
-                    setPaciente=({});
+                    setPaciente({});
 
                 }else{
                     //Agregamos
