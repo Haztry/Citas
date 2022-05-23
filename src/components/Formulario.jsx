@@ -104,8 +104,8 @@ export const Formulario = ({setPacientes,pacientes,paciente,setPaciente}) => {
     return (
 
 
-        <div className='bg-violet-400 ml-10 mr-5 rounded-md w-auto  '>
-            <form action='' className='m-5  md:min-h-[200px] ' onSubmit={validarForms} >
+        <div className=' sm:mr-5 mx-auto w-full sm:pr-5 px-10 '>
+            <form action='' className='bg-violet-400 p-5 h-full rounded-md' onSubmit={validarForms} >
                 {error && <p className='bg-gray-700 text-white p-2  w-full rounded-md text-center font-bold mb-2'>DEBES DE LLENAR TODOS LOS CAMPOS</p>}
                 <div className='p-1'>
                     <label className='font-bold'>Nombre Paciente </label>
@@ -120,7 +120,7 @@ export const Formulario = ({setPacientes,pacientes,paciente,setPaciente}) => {
                     <input type="email" id='correo' className='block rounded-10  w-full rounded-md h-9 p-2' placeholder='Correo' value={correo} onChange={(e) => setCorreo(e.target.value)} />
                 </div>
                 <div className='p-1'>
-                    <label className='font-bold'>Sintomas</label>
+                    <label className='font-bold'>Síntomas</label>
                     <textarea className='col-50 row-10 block w-full h-12 p-2' id='sintomas' value={sintomas} onChange={(e) => setSintomas(e.target.value)}></textarea>
                     <input type="submit" id='boton' className='bg-blue-300 text-center text-black mt-5 w-full rounded-md p-1 hover:bg-blue-400 cursor-pointer duration-75' value={paciente.id ? 'Editar paciente' : 'Agregar paciente' }
                     
